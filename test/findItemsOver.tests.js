@@ -1,17 +1,22 @@
 describe('test my findItemsOver function', function(){
-    it('it should take a list of objects each with a name and qty attribute. And also a second parameter which is a threshold for the quantity of items available. The function should return products that have quantity higher than the threshold.', function(){
-
+    it('it should return products that have quantity higher than the threshold 50.', function(){
+        
         var itemList = [
             {name : 'apples', qty : 10},
-            {name : 'pears', qty : 37},
-            {name : 'bananas', qty : 27},
+            {name : 'pears', qty : 19},
+            {name : 'bananas', qty : 17},
             {name : 'apples', qty : 3},
         ];
         
-        var results = [
-            {name : 'pears', qty : 37},
-            {name : 'bananas', qty : 27},
-        ];
+        var results = [];
+        
+        
+        assert.deepEqual(results, findItemsOver(itemList, 50));
+       
+    })
+
+
+    it('it should return products that have quantity higher than the threshold 50.', function(){
         
         var itemList2 = [
             {name : 'apples', qty : 10},
@@ -22,25 +27,33 @@ describe('test my findItemsOver function', function(){
         
         var results2 = [];
         
+        
+        assert.deepEqual(results2, findItemsOver(itemList2, 50));
+       
+    })
+
+    it('it should return products that have quantity higher than the threshold 100.', function(){
+        
         var itemList3 = [
-            {name : 'apples', qty : 40},
-            {name : 'pears', qty : 20},
-            {name : 'bananas', qty : 23},
-            {name : 'apples', qty : 37}
+            {name : 'apples', qty : 110},
+            {name : 'pears', qty : 19},
+            {name : 'bananas', qty : 17},
+            {name : 'apples', qty : 3},
         ];
         
         var results3 = [
-            {name : 'apples', qty : 40},
-            {name : 'bananas', qty : 23},
-            {name : 'apples', qty : 37}
+            {name : 'apples', qty : 110}
         ];
         
-
-
-
         
-        assert.deepEqual(results, findItemsOver(itemList, 20));
-        assert.deepEqual(results2, findItemsOver(itemList2, 20));
-        assert.deepEqual(results3, findItemsOver(itemList3, 20));
+        assert.deepEqual(results3, findItemsOver(itemList3, 100));
+       
     })
+
+
+    
+
+    
+
+    
 })
