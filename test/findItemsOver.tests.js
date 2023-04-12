@@ -16,7 +16,7 @@ describe('test my findItemsOver function', function(){
     })
 
 
-    it('it should return products that have quantity higher than the threshold 50.', function(){
+    it('it should return products that have quantity higher than the threshold 20.', function(){
         
         var itemList2 = [
             {name : 'apples', qty : 10},
@@ -28,7 +28,7 @@ describe('test my findItemsOver function', function(){
         var results2 = [];
         
         
-        assert.deepEqual(results2, findItemsOver(itemList2, 50));
+        assert.deepEqual(results2, findItemsOver(itemList2, 20));
        
     })
 

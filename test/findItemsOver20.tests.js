@@ -1,5 +1,5 @@
 describe('test my findItemsOver20 function', function(){
-    it('it should return all the products that have a quantity higher than 20.', function(){
+    it('higher than 20.', function(){
 
         var itemList = [
             {name : 'apples', qty : 10},
@@ -44,7 +44,7 @@ describe('test my findItemsOver20 function', function(){
         assert.deepEqual(results3, findItemsOver20(itemList3));
     })
 
-    it('it should return all the products that have a quantity higher than 30.', function(){
+    it('Quantity higher than 30.', function(){
 
         var itemList = [
             {name : 'apples', qty : 10},
@@ -89,7 +89,7 @@ describe('test my findItemsOver20 function', function(){
         assert.deepEqual(results3, findItemsOver20(itemList3));
     })
 
-    it('it should return all the products that have a quantity higher than 40.', function(){
+    it('it should return empty string .', function(){
 
         var itemList = [
             {name : 'apples', qty : 10},

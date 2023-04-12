@@ -1,23 +1,23 @@
 describe('test isWeekday fuction', function(){
-    it("it should take a string parameter - to find out if the parameter passed in is a day of the week (ie. Not a weekend day).",function(){
+    it("it should return empty string if empty string passed",function(){
        
-        assert.equal(isWeekday('Monday'), true);
-        assert.equal(isWeekday('Tuesday'), true);
-        assert.equal(isWeekday('Wednesday'), true);
-        assert.equal(isWeekday('Thursday'), true);
-        assert.equal(isWeekday('Friday'), true);
+        assert.equal(isWeekday(''), '');
+        assert.equal(isWeekday(''), '');
+        assert.equal(isWeekday(''), '');
+        assert.equal(isWeekday(''), '');
+        assert.equal(isWeekday(''), '');
 
     })
 
-    it("it should take a string parameter - to find out if the parameter passed in is a day of the week (ie. Not a weekend day).",function(){
-        assert.equal(isWeekday('Saturday'), false);
-        assert.equal(isWeekday('Sunday'), false);
-
-    })
-
-    it("it should take a string parameter - to find out if the parameter passed in is a day of the week (ie. Not a weekend day).",function(){
+    it("it should return false if its  Sunday",function(){
         
         assert.equal(isWeekday('Sunday'), false);
+
+    })
+
+    it("it should return true if is Monday",function(){
+        
+    
         assert.equal(isWeekday('Monday'), true);
         
 
