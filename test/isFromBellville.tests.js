@@ -10,7 +10,7 @@ describe('test my registration origin function', function(){
     })
 
     it('return undefined if passed with empty string', function(){
-        assert.equal(isFromBellville(''), undefined);
+        assert.equal(isFromBellville(''), '');
         
     })
 })

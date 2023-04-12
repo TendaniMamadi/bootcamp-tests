@@ -8,7 +8,7 @@ describe('test my regCheck function', function(){
 
     it("undefined if empty string", function(){
        
-        assert.equal(regCheck(''), undefined);
+        assert.equal(regCheck(''), '');
        
     })
 

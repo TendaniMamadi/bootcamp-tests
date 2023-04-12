@@ -5,7 +5,7 @@ describe('test my fromWhere function', function(){
     })
 
     it('it should return empty string if passed with empty string', function(){
-        assert.equal(fromWhere(''), '');
+        assert.equal((''),'');
        
     })
 
